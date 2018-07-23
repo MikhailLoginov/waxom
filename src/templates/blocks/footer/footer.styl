@@ -1,0 +1,71 @@
+footer
+  background-color rgb(51, 51, 51)
+
+.footer
+  padding 47px 0 60px 0
+  color white
+  &__content
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    margin 0 34px 0 0
+    +below(1000px)
+      margin 0
+    +below(880px)
+      flex-direction column
+      text-align center
+    a
+      color white
+      &:hover
+        opacity 0.7
+      &:active
+        opacity 0.5
+      
+  &__contact
+    width 210px
+    display flex
+    flex-direction column
+    +below(880px)
+      margin-top 50px
+      width 100%
+  &__address
+    font-size 14px
+    margin 0 0 22px 0
+    line-height 20px
+  &__ttl
+    margin 0 0 10px 0
+  &__phone
+    font-size 14px
+    margin-bottom 4px
+  &__email
+    font-size 14px
+
+  &__socials
+    display flex
+    justify-content center
+    margin 40px 0 0 0
+    .fab
+      color white
+      font-size 20px
+      margin-right 15px
+      transition all 0.25s
+      &:hover
+        opacity 0.7
+      &:active
+        opacity 0.5
+    
+
+  .logo
+    margin 35px 15px 0 8px
+    +below(960px)
+      margin-left 0
+    font-size 30px
+    font-weight 400
+    font-family Poiret One, cursive
+    color white
+    &__strong
+      font-weight 700
+    &:hover
+      color white
+    &:active
+      opacity 0.8

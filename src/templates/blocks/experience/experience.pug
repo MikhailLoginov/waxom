@@ -1,0 +1,49 @@
+mixin experience()
+  // Experience starts 
+  SECTION.section-experience
+    .container
+      A(name="experience")
+      +b.experience
+        +e.info
+          h2 Our Experience
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, expedita libero molestias necessitatibus, exercitationem cumque eligendi veritatis ullam quia rerum nihil, dolores veniam similique sed. Voluptate quisquam, a numquam assumenda optio culpa!
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores id officiis, cum natus est quia doloremque ex perferendis voluptatum necessitatibus accusamus animi tempore dolores libero architecto iste commodi veritatis ullam, quae sequi sapiente!
+          +b.A(href="").a-view VIEW CASE STUDIES
+        +e.skills
+          h2 Skills
+          +b.skill.skill-1
+            +e.ttl C++ development
+            +e.graphic
+              +e.success
+              +e.mark  
+                +inline-svg('tooltip')
+                +e.amount 95%
+          +b.skill.skill-2
+            +e.ttl .Net
+            +e.graphic
+              +e.success
+              +e.mark  
+                +inline-svg('tooltip')
+                +e.amount 75%
+          +b.skill.skill-3
+            +e.ttl HTML5
+            +e.graphic
+              +e.success
+              +e.mark  
+                +inline-svg('tooltip')
+                +e.amount 80%
+          +b.skill.skill-4
+            +e.ttl jQuery
+            +e.graphic
+              +e.success
+              +e.mark  
+                +inline-svg('tooltip')
+                +e.amount 55%
+          +b.skill.skill-5
+            +e.ttl Angular
+            +e.graphic
+              +e.success
+              +e.mark  
+                +inline-svg('tooltip')
+                +e.amount 85%
+  // Experience ends 

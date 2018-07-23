@@ -1,0 +1,24 @@
+mixin features()
+  // Features starts 
+  SECTION.section-features
+    .container
+      A(name="features")
+      +b.features
+        h2 Features you&#8217;ll love
+        +e.items
+          +b.feature
+            +e.circle.feature-1
+              +inline-svg('user')
+            h3 PERSONAL TOUCH
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni expedita quidem tempora quisquam ratione quod unde earum numquam voluptatem.
+          +b.feature
+            +e.circle.feature-2
+              +inline-svg('flag')
+            h3 UNIQUE SOLUTIONS
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni expedita quidem tempora quisquam ratione quod unde earum numquam voluptatem.
+          +b.feature
+            +e.circle.feature-3
+              +inline-svg('brush')
+            h3 HELP IN PROMOTION
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni expedita quidem tempora quisquam ratione quod unde earum numquam voluptatem.
+  // Features ends 

@@ -1,0 +1,55 @@
+.features
+  text-align center
+  padding 120px 0 82px 0
+  h2
+    margin-bottom 73px
+  &__items
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    +below(1100px)
+      justify-content space-around
+
+.feature
+  width 310px
+  border 2px solid #f2f2f2
+  text-align center
+  display flex
+  flex-direction column
+  align-items center
+  padding 0 10px
+  margin 20px 0
+  &__circle
+    width 64px
+    height 64px
+    border-radius 50%
+    margin -25px 0 10px 0
+    background #4ecb8c
+    svg
+      margin-top 16px
+      width 30px
+      height 30px
+      fill white
+      &.user
+        width 25px
+        height 25px
+        margin-top 18px
+      &.flag
+        width 25px
+        height 25px
+        margin-top 20px
+  &.feature-1
+    width 25px
+    height 25px
+  &.feature-2
+    width 25px
+    height 25px
+    margin-top 20px
+  h3
+    margin 10px 0 0 0
+  p
+    margin 14px 0 50px 0
+    line-height 24px
+
+svg
+  display inline-block

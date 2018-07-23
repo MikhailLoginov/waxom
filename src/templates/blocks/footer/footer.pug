@@ -1,0 +1,32 @@
+mixin footer()
+  // Footer starts 
+  FOOTER
+    .container
+      +b.footer
+        +e.content
+          +b.A(href="/index.html").logo
+            +e.SPAN.strong company
+            | name
+          +e.contact
+            +e.H4.ttl NEW YORK
+            +e.address Address goes here in a one or two lines, maybe lorem ipsum
+            +e.A(href="tel:+4480080090").phone +44 800 800 90
+            +e.A(href="mailto:info@domen.com").email info@domen.com
+          +e.contact
+            +e.H4.ttl LONDON
+            +e.address Address goes here in a one or two lines, maybe lorem ipsum
+            +e.A(href="tel:+4480080090").phone +44 800 800 90
+            +e.A(href="mailto:info@domen.com").email info@domen.com
+          +e.contact
+            +e.H4.ttl MADRID
+            +e.address Address goes here in a one or two lines, maybe lorem ipsum
+            +e.A(href="tel:+4480080090").phone +44 800 800 90
+            +e.A(href="mailto:info@domen.com").email info@domen.com
+        +e.socials
+          +e.A(href="")
+            +b.I.fab.fa-facebook
+            +b.I.fab.fa-twitter
+            +b.I.fab.fa-google-plus-square
+            +b.I.fab.fa-instagram
+        
+  // Footer ends

@@ -1,0 +1,18 @@
+mixin modal-contacts()
+  // Modal Contacts starts
+  +b(id="contacts").modal-blackout
+    +b.modal-contacts
+      +e.A(href="#close").close X
+      +e.H3.ttl Let's work together!
+      +e.FORM(action="#" method="post").form
+        +e.name
+          +e.LABEL(for="name").name-label Your name
+          +e.INPUT(type="text" id="name" name="contact-name").input-name
+        +e.email
+          +e.LABEL(for="email").email-label Your e-mail
+          +e.INPUT(type="email" id="email" name="contact-email" required).input-email
+        +e.text
+          +e.sub-ttl Tell us what you need
+          +e.TEXTAREA(name="textarea").textarea
+        +b.BUTTON(type="submit").btn-submit SUBMIT
+  // Modal Contacts ends 

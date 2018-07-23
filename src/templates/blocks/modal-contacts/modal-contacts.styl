@@ -1,0 +1,106 @@
+.modal-blackout
+  background rgba(0,0,0,0.6)
+  width 100%
+  height 100%
+  position fixed
+  top 0
+  left 0
+  display none
+  z-index 2
+  &:target
+    display block
+
+.modal-contacts
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+  margin auto
+  pointer-events none
+  width 450px
+  +below(550px)
+    width 280px
+  margin 10% auto
+  height 320px
+  background rgba(210,210,210,0.95)
+  transition opacity 400ms ease-in
+  padding 10px 40px
+  +below(550px)
+    padding 10px 10px
+  color black
+  pointer-events auto
+    
+  &__close
+    position absolute
+    right -15px
+    top -15px
+    +below(570px)
+      right 10px
+      top 8px
+    text-decoration none
+    color black
+    font-weight 700
+  
+  &__form
+    position relative
+
+  input
+    color black
+    background transparent
+    border none
+    outline none
+    border-bottom 1px solid grey
+    width 180px
+
+  &__name
+    margin-bottom 20px
+
+  &__name-label
+    display inline-block
+    margin-right 25px
+    +below(550px)
+      margin-right 10px
+    text-align right
+    width 200px
+    +below(550px)
+      width 80px
+
+  &__email-label
+    display inline-block
+    margin-right 25px
+    +below(550px)
+      margin-right 10px
+    text-align right
+    width 200px
+    +below(550px)
+      width 80px
+
+  &__text
+    display flex
+    margin-top 20px
+  
+  &__sub-ttl
+    width 200px
+    +below(550px)
+      width 80px
+    text-align right
+    margin-right 25px
+    +below(550px)
+      margin-right 10px
+
+  &__textarea
+    background transparent
+    border none 
+    outline none 
+    border-bottom 1px solid grey
+    height 15px
+    overflow hidden
+    width 180px
+    transition all 0.5s
+    &:focus
+      height 100px
+  
+  .btn-submit
+    margin 20px auto
+    

@@ -1,0 +1,21 @@
+mixin header()
+  // Header starts 
+  HEADER
+    .container
+      +b.header
+        +b.A(href="/index.html").logo
+          +e.SPAN.strong company
+          | name
+        NAV
+          ul.nav-menu
+            li
+              a(href="/index.html") HOME
+            li
+              a(href="#features") ABOUT
+            li
+              a(href="#blog") BLOG
+            li
+              a(href="#experience") PORTFOLIO
+            li
+              a(href="#contacts") CONTACT US
+  // Header ends 

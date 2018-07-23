@@ -1,0 +1,19 @@
+mixin blog()
+  // Blog starts 
+  SECTION.section-blog
+    .container
+      A(name="blog")
+      +b.blog
+        h2 From the Blog
+        +e.items
+          - for(let i=0; i<3; i++)
+              +b.post
+                +e.image
+                +e.H3.ttl Cache Invalidation Strategies With Varnish Cache
+                +e.info
+                  +inline-svg('calendar')
+                  +e.TIME(datetime="2014-03-04").date March 4, 2014
+                  +inline-svg('chat')
+                  +e.comments 2 comments
+                +e.P.text Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure that users were clear about the value
+  // Blog ends 
