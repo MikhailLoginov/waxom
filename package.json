@@ -51,7 +51,8 @@
     "plop": "^1.6.0",
     "postcss": "^5.0.21",
     "poststylus": "^0.2.3",
-    "rupture": "^0.6.1"
+    "rupture": "^0.6.1",
+    "swiper": "^4.3.3"
   },
   "dependencies": {
     "normalize.styl": "^3.0.3"

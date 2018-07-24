@@ -1,14 +1,16 @@
 mixin hero()
-  // Hero starts 
+  // Hero
   SECTION.section-hero
     .container
-      +b.hero
-        +e.content
-          h1 We&#8217;re here to create your online presense and style
-          +e.text-1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis aut molestiae harum alias quod eius minima, autem vel rerum accusantium necessitatibus beatae excepturi quis. Accusamus debitis tenetur necessitatibus sed assumenda.
-          +e.text-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis aut molestiae harum alias quod eius minima, autem vel rerum accusantium necessitatibus beatae excepturi quis. Accusamus debitis tenetur necessitatibus sed assumenda.
-          +e.text-3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis aut molestiae harum alias quod eius minima, autem vel rerum accusantium necessitatibus beatae excepturi quis. Accusamus debitis tenetur necessitatibus sed assumenda.
-          i.fab.fa-facebook
-          +b.A(href="").a-start START TODAY WITH US
-    VIDEO(src="/assets/uploads/roller-coaster.mp4" autoplay loop muted)
+      //+b.hero
+      +b.swiper-container
+        +b.swiper-wrapper
+          +b.swiper-slide Slide 1
+          +b.swiper-slide Slide 2
+          +b.swiper-slide Slide 3
+        +b.swiper-pagination
+        +b.swiper-button-prev
+        +b.swiper-button-next
+        +b.swiper-scrollbar
+
   // Hero ends 
