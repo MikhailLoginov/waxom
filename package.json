@@ -1,5 +1,5 @@
 {
-  "name": "piroll",
+  "name": "waxom",
   "version": "1.0.0",
   "description": "HTML pages that are made for learning purpose from prepared designs",
   "main": "index.js",
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikhailLoginov/piroll.git"
+    "url": "git+https://github.com/MikhailLoginov/waxom.git"
   },
   "author": "Mikhail Loginov (shadoww2131@gmail.com)",
   "license": "MIT",
-  "homepage": "https://github.com/MikhailLoginov/piroll#readme",
+  "homepage": "https://github.com/MikhailLoginov/waxom#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-preset-es2015": "^6.18.0",

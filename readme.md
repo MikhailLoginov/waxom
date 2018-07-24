@@ -1,6 +1,6 @@
-# Piroll
+# Waxom
 
-This project is a training project that consists of 5 pages and is made from prepeared design.
+This project is a training project from prepeared design
 
 # Local setup
 
@@ -32,13 +32,3 @@ This project is a training project that consists of 5 pages and is made from pre
 - src/templates/blocks = blocks for pages
 - src/assets/styles = main styles for whole project; local styles are inside blocks
 - complied project is available at dist/
-
-# Credits
-
-Thanks a lot to the author of original mockups that I used for this project!
-
-Author:
-https://dribbble.com/sudinasa
-
-Full HTML version:
-https://html.nkdev.info/piroll/
