@@ -2,15 +2,21 @@ mixin hero()
   // Hero
   SECTION.section-hero
     .container
-      //+b.hero
-      +b.swiper-container
-        +b.swiper-wrapper
-          +b.swiper-slide Slide 1
-          +b.swiper-slide Slide 2
-          +b.swiper-slide Slide 3
-        +b.swiper-pagination
-        +b.swiper-button-prev
-        +b.swiper-button-next
-        +b.swiper-scrollbar
+      +b.hero
+        +b.swiper-container
+          +b.swiper-wrapper
+            +b.swiper-slide
+              +e.slide-1
+            +b.swiper-slide
+              +e.slide-2
+            +b.swiper-slide
+              +e.slide-3
+            +b.swiper-slide
+              +e.slide-4
+            +b.swiper-slide
+              +e.slide-5
+          +b.swiper-pagination
+          +b.swiper-button-prev
+          +b.swiper-button-next
 
   // Hero ends 
