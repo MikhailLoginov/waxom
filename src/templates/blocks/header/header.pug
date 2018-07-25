@@ -5,17 +5,29 @@ mixin header()
       +b.header
         +b.A(href="/index.html").logo
           img(src="/assets/images/logo.svg")
-          +e.ttl Waxom
+          +e.H3.ttl Waxom
         NAV
-          ul.nav-menu
+          +b.UL.nav-menu
             li
-              a(href="/index.html") HOME
+              a(href="/index.html") Home
             li
-              a(href="#features") ABOUT
+              a(href="#") About us
             li
-              a(href="#blog") BLOG
+              a(href="#") Portfolio
             li
-              a(href="#experience") PORTFOLIO
+              a(href="#") Features
             li
-              a(href="#contacts") CONTACT US
+              a(href="#") Blog
+            li
+              a(href="#") Pricing
+            li
+              a(href="#") Shortcodes
+            li
+              a(href="#") Contact
+            li
+              +e.A(href="#").cart
+                img(src="/assets/images/icon-cart.svg")
+            li
+              a(href="#")
+                img(src="/assets/images/icon-search.svg")
   // Header ends 

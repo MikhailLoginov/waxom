@@ -1,36 +1,27 @@
 header
   position absolute
   width 100%
-  z-index 1
+  z-index 2
   left 0
   top 0
 
 .header
-  padding 73px 0 50px 6px
+  padding 40px 0 0 0
   display flex
   justify-content space-between
   flex-wrap wrap
-  +below(1000px)
-    padding 63px 15px 40px 98px
-    a img
-      margin-bottom 30px
-  +below(866px)
-    padding 20px 10px 30px 10px
   .logo
-    margin 19px 0 0 0
-
-img
-  width 64px
-  height 56px
-  fill black
-  display block
-
-nav 
-  display flex
+    display flex
+    &__ttl
+      font-size 2.125rem
+      font-family Raleway, sans-serif
+      color white
+      font-weight 400
 
 .nav-menu
+  margin 40px 0 0 0
+  display flex
   list-style none
-  margin 30px -7px 0 0
   +below(1100px)
     margin 30px 0 0 0
   +below(600px)
@@ -42,23 +33,17 @@ nav
       float none
       text-align left
     a
-      text-decoration none
       color white
-      font-size 14px
-      text-transform uppercase
-      font-family Montserrat, sans-serif
+      font-size 0.875rem
+      font-weight 300
       padding 0 15px 10px 15px
-      font-weight 600
       +below(600px)
         text-align left
         padding 0
       transition all .25s
       &:hover
-        border-bottom 3px solid white
-        +below(550px)
-          border-bottom none
+        color #c7b29a
       &:active
-        border-bottom 3px solid white
-        opacity 0.6
-        +below(550px)
-          border-bottom none
+        opactiy 0.5
+  &__cart
+    margin-left 50px

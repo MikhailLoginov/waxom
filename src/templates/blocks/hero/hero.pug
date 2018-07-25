@@ -1,22 +1,28 @@
 mixin hero()
   // Hero
   SECTION.section-hero
+    // Swiper
+    +b.swiper-container
+      +b.swiper-wrapper
+        +b.swiper-slide
+          +e.slide-1
+        +b.swiper-slide
+          +e.slide-2
+        +b.swiper-slide
+          +e.slide-3
+        +b.swiper-slide
+          +e.slide-4
+        +b.swiper-slide
+          +e.slide-5
+      +b.swiper-pagination
+      +b.swiper-button-prev
+      +b.swiper-button-next
+    // Swiper ends
     .container
       +b.hero
-        +b.swiper-container
-          +b.swiper-wrapper
-            +b.swiper-slide
-              +e.slide-1
-            +b.swiper-slide
-              +e.slide-2
-            +b.swiper-slide
-              +e.slide-3
-            +b.swiper-slide
-              +e.slide-4
-            +b.swiper-slide
-              +e.slide-5
-          +b.swiper-pagination
-          +b.swiper-button-prev
-          +b.swiper-button-next
+        h3 Unique and Modern Design
+        h1 Portfolio PSD Template
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veritatis totam sint molestias tempora optio aspernatur.
+        +b.A(href="").a-start GET STARTED
 
   // Hero ends 
