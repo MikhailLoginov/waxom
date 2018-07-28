@@ -3,13 +3,13 @@ mixin header()
   HEADER
     .container
       +b.header
-        +b.A(href="/index.html").logo
-          img(src="/assets/images/logo.svg")
+        +b.A(href="#").logo
+          include ../../../assets/images/svg/logo.svg
           +e.H3.ttl Waxom
         NAV
           +b.UL.nav-menu
             li
-              a(href="/index.html") Home
+              a(href="#") Home
             li
               a(href="#") About us
             li
@@ -26,8 +26,10 @@ mixin header()
               a(href="#") Contact
             li
               +e.A(href="#").cart
-                img(src="/assets/images/icon-cart.svg")
-            li
-              a(href="#")
-                img(src="/assets/images/icon-search.svg")
+                include ../../../assets/images/svg/icon-cart.svg
+            +e.LI.search
+              +e.FORM.form
+                +e.INPUT.input
+                +e.BUTTON.btn-search
+                  include ../../../assets/images/svg/icon-search.svg
   // Header ends 
