@@ -3,5 +3,98 @@ mixin projects()
   SECTION.section-projects
     .container
       +b.projects
-      
+        +e.H2.ttl Our Latest Projects.
+        +e.P.text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure laborum possimus cum vel distinctio animi suscipit quo! Ad, alias deserunt.
+        +e.industries
+          ul
+            li
+              +b.A(href="").active All
+            li
+              +e.A(href="") Web Design
+            li
+              +e.A(href="") Mobile App
+            li
+              +e.A(href="") Illustration
+            li
+              +e.A(href="") Photography
+        +e.wrapper
+          +b.project
+            +e.IMG(src="/assets/images/project-1.jpg")
+            +e.info
+              +e.border-block
+                include ../../../assets/images/svg/block-arrow.svg
+              +e.H5.ttl Claritas Etiam Processus
+              +e.P.industry Photography, Nature
+            +e.overlay
+              +e.icons
+                A(href="#")
+                  include ../../../assets/images/svg/icon-link.svg
+                A(href="#")
+                  include ../../../assets/images/svg/icon-lupa.svg
+          +b.project
+            +e.IMG(src="/assets/images/project-2.jpg")
+            +e.info
+              +e.border-block
+                include ../../../assets/images/svg/block-arrow.svg
+              +e.H5.ttl Quam Nutamus Farum
+              +e.P.industry Graphic Design, Mock-Up
+            +e.overlay
+              +e.icons
+                A(href="#")
+                  include ../../../assets/images/svg/icon-link.svg
+                A(href="#")
+                  include ../../../assets/images/svg/icon-lupa.svg
+          +b.project
+            +e.IMG(src="/assets/images/project-3.jpg")
+            +e.info
+              +e.border-block
+                include ../../../assets/images/svg/block-arrow.svg
+              +e.H5.ttl Usus Legentis Videntur
+              +e.P.industry Photography, Holiday
+            +e.overlay
+              +e.icons
+                A(href="#")
+                  include ../../../assets/images/svg/icon-link.svg
+                A(href="#")
+                  include ../../../assets/images/svg/icon-lupa.svg
+          +b.project
+            +e.IMG(src="/assets/images/project-4.jpg")
+            +e.info
+              +e.border-block
+                include ../../../assets/images/svg/block-arrow.svg
+              +e.H5.ttl Claritas Etiam Processus
+              +e.P.industry Photography, Nature
+            +e.overlay
+              +e.icons
+                A(href="#")
+                  include ../../../assets/images/svg/icon-link.svg
+                A(href="#")
+                  include ../../../assets/images/svg/icon-lupa.svg
+          +b.project
+            +e.IMG(src="/assets/images/project-5.jpg")
+            +e.info
+              +e.border-block
+                include ../../../assets/images/svg/block-arrow.svg
+              +e.H5.ttl Quam Nutamus Farum
+              +e.P.industry Graphic Design, Mock-Up
+            +e.overlay
+              +e.icons
+                A(href="#")
+                  include ../../../assets/images/svg/icon-link.svg
+                A(href="#")
+                  include ../../../assets/images/svg/icon-lupa.svg
+          +b.project
+            +e.IMG(src="/assets/images/project-6.jpg")
+            +e.info
+              +e.border-block
+                include ../../../assets/images/svg/block-arrow.svg
+              +e.H5.ttl Usus Legentis Videntur
+              +e.P.industry Photography, Holiday
+            +e.overlay
+              +e.icons
+                A(href="#")
+                  include ../../../assets/images/svg/icon-link.svg
+                A(href="#")
+                  include ../../../assets/images/svg/icon-lupa.svg
+        +b.A(href="#").a-button LOAD MORE
   // Projects end
