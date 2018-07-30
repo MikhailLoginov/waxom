@@ -2,6 +2,31 @@ mixin numbers()
   // Numbers
   SECTION.section-numbers
     .container
-      +b.numbers
+      +b.numbers 
+        +e.item
+          include ../../../assets/images/svg/icon-numbers-1.svg
+          +e.number 3587
+          +e.description SATISFIED CLIENTS
+          +e.border-block
+        +e.item
+          include ../../../assets/images/svg/icon-numbers-2.svg
+          +e.number 207
+          +e.description CUPS OF COFFEE
+          +e.border-block
+        +e.item
+          include ../../../assets/images/svg/icon-numbers-3.svg
+          +e.number 2500
+          +e.description BLOG POSTS
+          +e.border-block
+        +e.item
+          include ../../../assets/images/svg/icon-numbers-4.svg
+          +e.number 873
+          +e.description LIKES
+          +e.border-block
+        +e.item
+          include ../../../assets/images/svg/icon-numbers-5.svg
+          +e.number 900
+          +e.description WE LAUNCHED
+          +e.border-block
       
   // Numbers end

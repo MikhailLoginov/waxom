@@ -6,12 +6,12 @@ module.exports = function(options) {
       .src(options.src)
       .pipe($.gp.plumber())
       //.pipe($.gp.babel({
-      //  presets: ['es2015']
+      //  presets: ['es2016']
       //}))
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.concat('temp.js'))
       .pipe($.gp.rename('build.js'))
-      .pipe($.gp.uglify())
+      //.pipe($.gp.uglify())
       .pipe($.gp.sourcemaps.write('.'))
       .pipe($.gulp.dest('./dist/assets/scripts'))
       .pipe($.browserSync.stream())

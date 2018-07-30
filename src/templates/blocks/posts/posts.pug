@@ -3,5 +3,47 @@ mixin posts()
   SECTION.section-posts
     .container
       +b.posts
+        +e.H2.ttl Recent Posts.
+        +e.P.text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis animi est quod itaque cupiditate quae praesentium, eveniet labore perspiciatis sint!
+        +e.wrapper
+          +b.post
+            +e.IMG(src="/assets/images/post-1.jpg")
+            +e.time-block
+              +e.date
+                +e.TIME(datetime="09-30") 30
+              +e.month Sep.
+            +e.info
+              +e.H5.ttl Lorem ipsum dolor sit amet
+              +e.P.text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, id.
+              +b.A(href="#").a-more Read More
+                include ../../../assets/images/svg/icon-small-arrow.svg
+            +e.overlay
+          +b.post
+            +e.IMG(src="/assets/images/post-2.jpg")
+            +e.time-block
+              +e.date
+                +e.TIME(datetime="09-30") 30
+              +e.month Sep.
+            +e.info
+              +e.H5.ttl Lorem ipsum dolor sit amet
+              +e.P.text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, id.
+              +b.A(href="#").a-more Read More
+                include ../../../assets/images/svg/icon-small-arrow.svg
+            +e.overlay
+          +b.post
+            +e.IMG(src="/assets/images/post-3.jpg")
+            +e.time-block
+              +e.date
+                +e.TIME(datetime="09-30") 30
+              +e.month Sep.
+            +e.info
+              +e.H5.ttl Lorem ipsum dolor sit amet
+              +e.P.text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, id.
+              +b.A(href="#").a-more Read More
+                include ../../../assets/images/svg/icon-small-arrow.svg
+            +e.overlay
+        +e.nav
+          include ../../../assets/images/svg/icon-circled-arrow-right.svg
+          include ../../../assets/images/svg/icon-circled-arrow-right.svg
       
   // Posts end

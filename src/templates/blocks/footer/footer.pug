@@ -1,7 +1,72 @@
 mixin footer()
   // Footer
   FOOTER
-    .container
-      +b.footer
+    +b.footer-top
+      .container
+        +e.content
+          +e.column
+            +b.A(href="#").logo
+              include ../../../assets/images/svg/logo.svg
+              +e.H3.ttl Waxom
+            +e.text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati nam voluptates aliquam, dolor placeat hic reprehenderit eos numquam quos eius dignissimos tempora delectus ut ducimus aperiam facere cupiditate? Fugiat.
+            +b.A(href="").a-more Read More
+              include ../../../assets/images/svg/icon-small-arrow.svg
+          +e.column
+            +e.H4.ttl Recent Posts
+            +e.post
+              +e.TIME(datetime="2015-09-08").timestamp September 08, 2015
+              +e.post-text Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            +e.border-block
+            +e.post
+              +e.TIME(datetime="2015-09-08").timestamp September 08, 2015
+              +e.post-text Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            +e.border-block
+            +e.post
+              +e.TIME(datetime="2015-09-08").timestamp September 08, 2015
+              +e.post-text Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          +e.column
+            +e.H4.ttl Our Twitter
+            +e.post
+              +e.post-text 
+                +e.A(href="").blue @waxom 
+                | lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              +e.timestamp 3 mins ago
+            +e.border-block
+            +e.post
+              +e.post-text Mirum est 
+                +e.A(href="").blue #envato 
+                | notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+              +e.timestamp 5 hours ago
+            +e.border-block
+            +e.post
+              +e.post-text Soluta nobis option 
+                +e.A(href="").blue bit.ly/IHniso7
+              +e.timestamp 20 days ago
+          +e.column
+            +e.H4.ttl Dribbble Widget
+            +e.widgets
+              +e.IMG(src="/assets/images/widget-1.jpg")
+              +e.IMG(src="/assets/images/widget-2.jpg")
+              +e.IMG(src="/assets/images/widget-3.jpg")
+              +e.IMG(src="/assets/images/widget-4.jpg")
+    +b.footer-bot
+      .container
+        +e.content
+          +e.privacy
+            ul
+              li Copyright &copy; 2015 
+                +e.A(href="").logo Waxom
+              li  | 
+                A(href="") Privacy Policy
+              li  | 
+                A(href="") FAQ
+              li  | 
+                A(href="") Support
+          +e.credits
+            ul
+              li Designed by 
+                A(href="") ThemeFire 
+              li  | Only on 
+                A(href="") Envato Market
         
   // Footer ends

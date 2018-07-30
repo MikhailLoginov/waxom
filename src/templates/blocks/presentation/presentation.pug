@@ -1,7 +1,14 @@
 mixin presentation()
   // Presentation
   SECTION.section-presentation
-    .container
-      +b.presentation
+    +b.presentation
+      +e.VIDEO(src="/assets/uploads/presentation-demo.mp4" poster="/assets/images/presentation-poster.jpg").video
+      +e.info
+        +b.BUTTON.btn-play
+          include ../../../assets/images/svg/icon-play.svg
+          include ../../../assets/images/svg/icon-play-border.svg
+        +e.H2.ttl Waxom Video Presentation
+        +e.P.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aperiam nam mollitia temporibus quo ratione!
+        +e.length 03:26
       
   // Presentation ends
