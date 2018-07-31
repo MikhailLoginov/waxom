@@ -7,6 +7,8 @@ mixin header()
           include ../../../assets/images/svg/logo.svg
           +e.H3.ttl Waxom
         NAV
+          +e.INPUT(type="checkbox" id="icon")
+          +e.LABEL(for="icon" id="menu-icon")
           +b.UL.nav-menu
             li
               a(href="#") Home
