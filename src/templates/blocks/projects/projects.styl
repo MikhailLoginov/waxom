@@ -50,6 +50,7 @@
       width 100%
   &__ttl
     color #c7b29a
+    z-index 1
   &__industry
     color #d1d1d1
     font-size 0.875rem
@@ -57,10 +58,10 @@
   &__info
     position relative
     padding 28px 30px
-    box-sizing border-box
+    z-index 1
   &__border-block
     position absolute 
-    top -14px
+    top -0.875rem
     left 20px
     z-index 1
     path
@@ -73,6 +74,8 @@
     display none
     width 100%
     height 237px
+    +below(400px)
+      height 100%
     background rgba(17, 17, 17, 0.7)
     display none
     svg
@@ -83,6 +86,10 @@
         fill #c7b299
       &:active
         opacity 0.7
+
+  &__icons
+    +below(400px)
+      margin-bottom 3rem
 
   &:hover
     .project__overlay
