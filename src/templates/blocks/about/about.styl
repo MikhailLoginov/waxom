@@ -5,25 +5,41 @@
 .about
   text-align center
   &__text
-    width 700px
+    max-width 700px
     margin 20px auto 40px auto
     font-weight 300
     line-height 1.75rem
   &__image-comp
     position relative
-    height 482px
+    +below(1000px)
+      display flex
+      flex-direction column
   &__image-middle
+    display block
     position relative
     margin 0 auto
     z-index 1
+    +below(1000px)
+      position unset
+      width 100%
   &__image-left
+    display block
     position absolute
     top 82px
     left 0
+    +below(1000px)
+      position unset
+      margin 20px auto
+      width 100%
   &__image-right
+    display block
     position absolute 
     right 0
     top 82px
+    +below(1000px)
+      position unset
+      margin 20px auto  
+      width 100%
 
 .purchase
   color white
@@ -42,3 +58,6 @@
     display flex
     align-items center
     justify-content space-around
+    flex-wrap wrap
+  .a-button
+    margin-top 20px

@@ -7,13 +7,19 @@
   align-items center
   &__text
     text-align center
-    width 700px
+    max-width 700px
   &__industries
     margin 30px 0
+    +below(650px)
+      width 370px
+    +below(400px)
+      width 100%
     ul 
       list-style none
       li 
         display inline-block
+        +below(650px)
+          display block
         a 
           color #8c8c8c
           font-size 0.875rem
@@ -22,6 +28,8 @@
           border 1px solid #ebebeb
           border-radius 3px
           margin 0 2px
+          +below(650px)
+            display block
   .active
     color white
     background #998675
@@ -31,12 +39,15 @@
     justify-content space-around
 
 .project
-  width 370px
+  max-width 370px
   background #fbfaf8
   margin-bottom 30px
   position relative
   display flex
   flex-direction column
+  img 
+    +below(400px)
+      width 100%
   &__ttl
     color #c7b29a
   &__industry

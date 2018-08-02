@@ -5,10 +5,14 @@
 .numbers
   display flex
   justify-content space-around
+  flex-wrap wrap
+  +below(650px)
+    flex-direction column
   &__item
     display flex
     flex-direction column
     align-items center
+    margin 30px 10px 0 10px
   svg 
     fill #c7b299
   &__number
