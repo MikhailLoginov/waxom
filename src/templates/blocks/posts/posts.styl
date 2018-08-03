@@ -69,6 +69,7 @@
     line-height 25px
   &__info
     padding 30px
+    z-index 1
   &__ttl
     color #555555
   &__text
@@ -83,6 +84,8 @@
     top 0
     width 100%
     height 220px
+    +below(400px)
+      height 100%
   &:hover
     .post__date
       background-color #c7b299
