@@ -20,20 +20,26 @@
         display inline-block
         +below(650px)
           display block
-        a 
-          color #8c8c8c
-          font-size 0.875rem
-          font-weight 300
-          padding 5px 20px
-          border 1px solid #ebebeb
-          border-radius 3px
-          margin 0 2px
-          +below(650px)
-            display block
+  &__industry
+    cursor pointer
+    color #8c8c8c
+    font-size 0.875rem
+    font-weight 300
+    padding 5px 20px
+    border 1px solid #ebebeb
+    border-radius 3px
+    margin 0 2px
+    +below(650px)
+      display block
+    &:hover
+      color white
+      background #998675
+      opacity 0.5
   .active
     color white
     background #998675
   &__wrapper
+    width 100%
     display flex
     flex-wrap wrap 
     justify-content space-around

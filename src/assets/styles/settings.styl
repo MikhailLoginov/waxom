@@ -81,30 +81,30 @@ p
     transform scale(0.99)
 
 .btn-play
-    position relative
-    width 100px
-    height 100px
-    border-radius 50%
-    background-color rgba(0,0,0,0.2)
-    outline 0
-    border 0
-    cursor pointer
-    svg
-      position absolute
-      left 0
-      top 0
-      bottom 0
-      right 0
-      margin auto
-      &:first-child
-        left 8px
-    &:hover
-      svg:last-child
-        animation spin 1.5s infinite linear
-        opacity 0.7
-    &:active
-      svg:first-child
-        opacity 0.4
+  position relative
+  width 100px
+  height 100px
+  border-radius 50%
+  background-color rgba(0,0,0,0.2)
+  outline 0
+  border 0
+  cursor pointer
+  svg
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    right 0
+    margin auto
+    &:first-child
+      left 8px
+  &:hover
+    svg:last-child
+      animation spin 1.5s infinite linear
+      opacity 0.7
+  &:active
+    svg:first-child
+      opacity 0.4
   @keyframes spin
     to
       transform rotate(360deg)
