@@ -1,5 +1,7 @@
 'use strict'
 
+const htmlnano = require('gulp-htmlnano');
+
 const data = {
   jv0: 'jacascript:void(0);',
   timestamp: +Date.now()
@@ -13,6 +15,9 @@ module.exports = function(options) {
       .pipe($.gp.pug({
         data: data,
         pretty: true
+      }))
+      .pipe(htmlnano({
+        removeComments: true
       }))
       .pipe( $.gp.rename({dirname: '.'}) )
       .pipe($.gulp.dest('./dist'))

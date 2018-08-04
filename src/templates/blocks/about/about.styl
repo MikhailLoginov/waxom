@@ -23,7 +23,9 @@
     transition all 1s
     +below(1000px)
       position unset
-      width 100%
+      width 90%
+      &:hover
+        transform scale(1.1)
     +above(1000px)
       &:hover
         transform scale(1.1)
@@ -37,7 +39,9 @@
     +below(1000px)
       position unset
       margin 20px auto
-      width 100%
+      width 90%
+      &:hover
+        transform scale(1.1)
     +above(1000px)
       &:hover
         left 10px
@@ -52,8 +56,10 @@
     transition all 1s
     +below(1000px)
       position unset
-      margin 20px auto  
-      width 100%
+      margin 20px auto
+      width 90%
+      &:hover
+        transform scale(1.1)
     +above(1000px)
       &:hover
         left 10px
@@ -67,12 +73,16 @@
   &__ttl
     font-size 1.75rem
     font-weight 400
+    +below(500px)
+      text-align center
   &__brown
     color #c7b299
   p 
     font-size 1.125rem
     font-weight 300
     color #615855
+    +below(500px)
+      text-align center
   .container
     display flex
     align-items center

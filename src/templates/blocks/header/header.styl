@@ -4,16 +4,165 @@ header
   z-index 2
   left 0
   top 0
+  pointer-events none
 
-.header
-  padding 40px 0 0 0
-  +below(800px)
-    padding-top 20px
+.header--mobile
+  position relative
+  padding 40px 40px 0 40px
   display flex
   justify-content space-between
   flex-wrap wrap
+  +above(1000px)
+    display none
+  .logo
+    position absolute 
+    left calc(50% - 32px)
+    pointer-events auto
+    svg
+      fill white
+      &:hover
+        fill #c7b29a
+      &:active
+        opacity 0.5
+  nav 
+    position relative
+    pointer-events auto
+  
+  .nav-menu
+    margin 0
+    list-style none
+    overflow hidden
+    -webkit-padding-start 0px
+    display none
+    border-radius 5px
+    margin-top 15px
+    width 150px
+    bottom 0
+    max-height inherit
+    position relative 
+    z-index 3
+    li
+      float left
+      text-align center
+      line-height 30px
+      display block
+      background rgba(0,0,0,0.9)
+      a
+        color white
+        font-size 0.875rem
+        font-weight 300
+        padding 0 5px 10px 5px
+        svg
+          fill white
+          margin-top 10px
+          &:hover
+            fill #c7b29a
+          &:active
+            opacity 0.5
+        transition all .25s
+        &:hover
+          color #c7b29a
+        &:active
+          opacity 0.5
+  .search
+    pointer-events auto
+    margin-top 5px
+    position relative 
+    z-index 3
+    &__input
+      width 0
+      transition width 1s
+      padding 0
+      border 0
+      background rgba(0,0,0,0.8)
+      line-height 48px
+      color white
+      font-size 13px
+      font-weight 300
+      &:focus
+        outline 0
+    &__btn-search
+      background transparent
+      border 0
+      padding 0
+      cursor pointer
+      &:hover svg
+        fill #c7b29a
+      &:active svg
+        opacity 0.5
+      &:focus
+        outline 0
+      svg
+        fill white
+        margin-top 10px
+    &__form
+      padding 0 10px
+      &:hover .search__input
+        padding 0 15px
+        width 150px
+        +below(370px)
+          width 100px
+
+  #menu-icon, #menu-icon:before, #menu-icon:after
+    background white 
+    border-radius 0.05em
+    height 3px
+    transition all 0.2s ease-in-out
+    width 100%
+  #menu-icon:before, #menu-icon:after 
+    content ""
+    position absolute 
+    left 0
+  #menu-icon:before
+    top -7px
+  #menu-icon:after
+    bottom -7px
+  #icon
+    cursor pointer
+    opacity 0
+    position absolute
+    z-index 2
+    margin-top 10px
+    width 40px 
+    height 30px
+    &:hover + #menu-icon
+      background #c7b29a
+      &:before
+        background #c7b29a
+      &:after
+        background #c7b29a
+    &:active + #menu-icon
+      opacity 0.5
+    &:checked 
+      &+ #menu-icon 
+        background transparent
+        &:before
+          top 0
+          transform rotate(-45deg)
+        &:after
+          bottom 0
+          transform rotate(45deg)
+      &~ .nav-menu
+        display flex
+        flex-direction column
+
+  #menu-icon
+    width 30px
+    position relative
+    margin-top 25px
+    display inline-block
+
+.header--desktop
+  padding 40px 20px 0 20px
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  +below(1000px)
+    display none
   .logo
     display flex
+    pointer-events auto
+    margin-left 10px
     svg
       fill white
     &__ttl
@@ -22,136 +171,75 @@ header
       color white
       font-weight 400
       margin-top 8px
-      +below(550px)
-        display none
+  nav
+    pointer-events auto
+    margin-top 2px
   
-    
-
-.nav-menu
-  margin 0
-  display flex
-  list-style none
-  overflow hidden
-  -webkit-padding-start 0px
-  li
-    float left
-    text-align center
-    line-height 50px
-    +below(1000px)
-      line-height 30px
-    a
-      color white
-      font-size 0.875rem
-      font-weight 300
-      padding 0 15px 10px 15px
+  .nav-menu
+    margin 0
+    display flex
+    list-style none
+    overflow hidden
+    -webkit-padding-start 0px
+    li
+      float left
+      text-align center
+      line-height 50px
+      a
+        color white
+        font-size 0.875rem
+        font-weight 300
+        padding 0 14px 10px 14px
+        +below(1250px)
+          padding 0 5px 10px 5px
+        svg
+          fill white
+          margin-top 13px
+          &:hover
+            fill #c7b29a
+          &:active
+            opactiy 0.5
+        transition all .25s
+        &:hover
+          color #c7b29a
+        &:active
+          opacity 0.5
+    &__search
+      margin-top 3px
+    &__cart
+      margin 0 0 0 36px
       +below(1250px)
-        padding 0 5px 10px 5px
+        margin-left 0
+    &__input
+      width 0
+      transition width 1s
+      padding 0
+      border 0
+      background rgba(0,0,0,0.2)
+      line-height 48px
+      color white
+      font-size 13px
+      font-weight 300
+      &:focus
+        outline 0
+    &__btn-search
+      background transparent
+      border 0
+      padding 0
+      cursor pointer
+      &:hover svg
+        fill #c7b29a
+      &:focus
+        outline 0
       svg
         fill white
         margin-top 10px
-        &:hover
-          fill #c7b29a
-        &:active
-          opactiy 0.5
-      transition all .25s
-      &:hover
-        color #c7b29a
-  &__cart
-    margin-left 50px
-    +below(1250px)
-      margin-left 0
-  &__input
-    width 0
-    transition width 1s
-    padding 0
-    border 0
-    background rgba(0,0,0,0.2)
-    line-height 48px
-    color white
-    font-size 13px
-    font-weight 300
-    &:focus
-      outline 0
-  &__btn-search
-    background transparent
-    border 0
-    padding 0
-    cursor pointer
-    &:hover svg
-      fill #c7b29a
-    &:focus
-      outline 0
-    svg
-      fill white
-      margin-top 10px
-  &__form
-    padding 0 10px
-    &:hover .nav-menu__input
-      width 120px
-      padding 0 15px
-      +below(1000px)
-        width 100px
-      +below(410px)
-        width 50px
-        padding 0
-  &__search:hover+li
-    display none
-  +below(1000px)
-    opacity 0
-    max-height 0
-#menu-icon, #menu-icon:before, #menu-icon:after
-  background white 
-  border-radius 0.05em
-  height 0.2em
-  transition all 0.2s ease-in-out
-  width 100%
-#menu-icon:before, #menu-icon:after 
-  content ""
-  position absolute 
-  left 0
-#menu-icon:before
-  top -0.4em
-#menu-icon:after
-  bottom -0.4em
-#icon
-  cursor pointer
-  opacity 0
-  position absolute
-  z-index 2
-  right 25px
-  width 20px 
-  height 20px
-  &:checked 
-    &+ #menu-icon 
-      background transparent 
-      &:before
-        top 0
-        transform rotate(-45deg)
-      &:after
-        bottom 0
-        transform rotate(45deg)
-    &~ ul 
-      bottom 0
-      margin 2em 20px 0 0
-      max-height inherit 
-      opacity 1
-      flex-direction column
-      border-radius 5px
-      li 
-        display block
-        background rgba(0,0,0,0.9)
-#menu-icon
-  cursor pointer
-  max-width 1em 
-  position relative
-  display none
-  float right
-  margin 10px 20px 0 0
-  +below(1000px)
-    display inline-block
+  
+    &__form
+      padding 0 10px
+      &:hover .nav-menu__input
+        width 120px
+        padding 0 15px
+    &__search:hover+li
+      display none
 
-nav 
-  +below(1000px)
-    width 200px
-  +below(410px)
-    width 120px
