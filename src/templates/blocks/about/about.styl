@@ -1,12 +1,12 @@
 .section-about
   background #fbfaf8
-  padding-top 100px
+  padding-top 33px
 
 .about
   text-align center
   &__text
     max-width 700px
-    margin 20px auto 40px auto
+    margin 16px auto 34px auto
     font-weight 300
     line-height 1.75rem
   &__image-comp
@@ -69,10 +69,13 @@
 .purchase
   color white
   background linear-gradient(to right, #1c1412, #4d3122)
-  padding 50px 0
+  padding 44px 0 50px 0
+  &__left-block
+    margin-left 30px
   &__ttl
     font-size 1.75rem
     font-weight 400
+    margin-bottom 5px
     +below(500px)
       text-align center
   &__brown
@@ -81,12 +84,14 @@
     font-size 1.125rem
     font-weight 300
     color #615855
+    letter-spacing -0.1px
     +below(500px)
       text-align center
   .container
     display flex
     align-items center
-    justify-content space-around
+    justify-content space-between
     flex-wrap wrap
   .a-button
-    margin-top 20px
+    margin 2px 30px 0 0
+    height 44px

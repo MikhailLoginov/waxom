@@ -66,7 +66,6 @@ header
           opacity 0.5
   .search
     pointer-events auto
-    margin-top 5px
     position relative 
     z-index 3
     &__input
@@ -79,9 +78,13 @@ header
       color white
       font-size 13px
       font-weight 300
+      position absolute
+      top 0
+      right 45px
       &:focus
         outline 0
     &__btn-search
+      margin-top 5px
       background transparent
       border 0
       padding 0
@@ -96,12 +99,8 @@ header
         fill white
         margin-top 10px
     &__form
+      position relative 
       padding 0 10px
-      &:hover .search__input
-        padding 0 15px
-        width 150px
-        +below(370px)
-          width 100px
 
   #menu-icon, #menu-icon:before, #menu-icon:after
     background white 
@@ -204,8 +203,6 @@ header
           color #c7b29a
         &:active
           opacity 0.5
-    &__search
-      margin-top 3px
     &__cart
       margin 0 0 0 36px
       +below(1250px)
@@ -223,6 +220,7 @@ header
       &:focus
         outline 0
     &__btn-search
+      margin-top 3px
       background transparent
       border 0
       padding 0
