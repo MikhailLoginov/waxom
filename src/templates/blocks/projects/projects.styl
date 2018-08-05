@@ -1,5 +1,5 @@
 .section-projects
-  padding 100px 0
+  padding 75px 0 82px 0
 
 .projects
   display flex
@@ -8,8 +8,10 @@
   &__text
     text-align center
     max-width 700px
+    margin 17px 0 0 0
+    line-height 1.75rem
   &__industries
-    margin 30px 0
+    margin 33px 0 40px 0
     +below(650px)
       width 370px
     +below(400px)
@@ -25,13 +27,16 @@
     color #8c8c8c
     font-size 0.875rem
     font-weight 300
-    padding 5px 20px
+    padding 7px 20px
     border 1px solid #ebebeb
     border-radius 3px
-    margin 0 2px
+    margin 0 3px
+    letter-spacing -0.05px
+    min-width 25px
+    text-align center
     +below(650px)
       display block
-    &:hover
+    &:hover:not(.active)
       color white
       background #998675
       opacity 0.5
@@ -43,11 +48,17 @@
     display flex
     flex-wrap wrap 
     justify-content space-around
+    box-sizing border-box
+    padding 0 15px
+  .a-button
+    margin-top 10px
+    height 44px
+    line-height 44px
 
 .project
   max-width 370px
   background #fbfaf8
-  margin-bottom 30px
+  margin 0 3px 30px 3px
   position relative
   display flex
   flex-direction column
@@ -57,13 +68,15 @@
   &__ttl
     color #c7b29a
     z-index 1
+    margin-bottom 7px
   &__industry
     color #d1d1d1
     font-size 0.875rem
     font-weight 300
+    letter-spacing -0.1px
   &__info
     position relative
-    padding 28px 30px
+    padding 27px 30px
     z-index 1
   &__border-block
     position absolute 
@@ -96,7 +109,6 @@
   &__icons
     +below(400px)
       margin-bottom 3rem
-
   &:hover
     .project__overlay
       display flex

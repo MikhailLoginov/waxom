@@ -1,24 +1,31 @@
 .section-numbers
   background linear-gradient(to right, #1c1412, #4d3122)
-  padding 50px 0
+  padding 39px 0 60px 0
+  box-sizing border-box
 
 .numbers
   display flex
   justify-content space-around
   flex-wrap wrap
+  padding 0 115px
   +below(650px)
     flex-direction column
+    align-items center
   &__item
     display flex
     flex-direction column
     align-items center
     margin 30px 10px 0 10px
+    width 180px
   svg 
     fill #c7b299
   &__number
+    margin 20px 0 7px 0
     font-size 3rem
     font-weight 200
     color white
+    +below(1000px)
+      margin 20px 0
   &__description
     color #c7b299
     font-weight 300
@@ -27,4 +34,4 @@
     width 30px
     height 2px
     background-color white
-    margin-top 20px
+    margin-top 27px

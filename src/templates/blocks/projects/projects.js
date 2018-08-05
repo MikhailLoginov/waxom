@@ -2,7 +2,7 @@ function industrySelection() {
   const all = [0, 1, 2, 3, 4, 5],
     webDesign = [1, 4, 5],
     mobileApp = [0],
-    illustration = [0, 2, 3],
+    illustration = [2, 3],
     photography = [0, 2, 3, 5];
 
   let industryName = all;
